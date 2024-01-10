@@ -1,0 +1,14 @@
+ion-icon {
+    font-size: 1.7rem;
+    color: var(--green-8);
+}
+
+.coming-soon {
+    color: var(--gray-10);
+}
+
+.item_content {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}

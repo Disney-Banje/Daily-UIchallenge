@@ -1,0 +1,89 @@
+.feature-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.personal-group .feature-list,
+.container {
+    border-top: 0.05rem solid var(--gray-6);
+    border-bottom: 0.05rem solid var(--gray-6);
+    padding: 2.5rem 0;
+}
+
+.pricing-group {
+    font-weight: 600;
+    text-align: start;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 8.0rem auto;
+}
+
+.personal-group,
+.teams-group {
+    border: 0.1rem solid var(--gray-5);
+    border-radius: 1.2rem;
+    padding: 2.0rem;
+}
+
+.group-tag {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+.group_rates {
+    margin-top: 1.8rem;
+}
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+} 
+
+@media screen and (min-width: 770px) {
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .personal-group {
+        align-self: flex-start;
+    }
+
+    .pricing-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1129px) {
+    .pricing-details {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+        gap: 1.8rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .container {
+        gap: 1.8rem;
+        flex-direction: row;
+    }
+}

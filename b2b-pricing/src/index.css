@@ -1,0 +1,32 @@
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/sage.css';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #172b36;
+  background-color: #f1f6f4;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
