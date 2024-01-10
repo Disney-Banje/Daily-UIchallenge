@@ -14,9 +14,9 @@ This project serves as a personal journey to improve my coding skills, particula
 
 ## Getting Started 🛠️
 
-1. Clone the repository: `git clone https://github.com/your-username/UI-Designs-Compilation.git`
+1. Clone the repository: `git clone https://github.com/Disney-Banje/Daily-UIchallenge.git`
 2. Navigate to the project directory: `cd UI-Designs-Compilation`
-3. Open the `index.html` file in your preferred browser.
+3. Open the chosen file in your preferred browser.
 
 ## Contributing 🤝
 
