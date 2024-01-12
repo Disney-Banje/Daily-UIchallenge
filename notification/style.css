@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    color: #172b36;
+    /* background-color: #f4ede4; */
+}
+
+img {
+    aspect-ratio: 1 / 1;
+    width: 5.8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.3rem solid #f8f4ed;
+    margin-left: -0.9rem;  
+    position: relative;
+    z-index: 100;
+}
+
+ion-icon {
+    font-size: 2.8rem;
+    background-color: gainsboro;
+    padding: 1.2rem;
+    border-radius: 50%;
+    color: #4dd8ff;
+}
+
+.illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+}
+
+.container {
+    text-align: center;
+    background-color: #f8f4ed;
+    border-radius: 2.2rem;
+    padding: 3.9rem 1.5rem 1.5rem;
+    margin: 1.8rem;
+    max-width: 44.5rem;
+}
+
+h1 {
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+p {
+    width: 70%;
+    margin: 1.2rem auto;
+}
+
+.btn {
+    display: block;
+    flex: 1;
+    padding: 0.9rem;
+    border-radius: 2.5rem;
+    font-size: 1.7rem;
+    transition: all 250ms ease-in-out;
+}
+
+.cta {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+.confirm {
+    background-color: #083645;
+    color: #f8f4ed;
+}
+
+.manually {
+    background-color: #d9e8e3;
+}
+
+.btn:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem #0f0707;
+}
