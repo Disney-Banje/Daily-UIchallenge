@@ -16,7 +16,7 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 body {
@@ -74,12 +74,12 @@ h1 {
 
 p {
     width: 70%;
-    margin: 1.2rem auto;
+    margin: 1.2rem auto 2.5rem;
 }
 
 .btn {
     display: block;
-    flex: 1;
+    width: 100%;
     padding: 0.9rem;
     border-radius: 2.5rem;
     font-size: 1.7rem;
@@ -89,10 +89,10 @@ p {
 .cta {
     display: flex;
     gap: 1.2rem;
-    margin-top: 2.5rem;
 }
 
-.confirm {
+.confirm,
+.pick {
     background-color: #083645;
     color: #f8f4ed;
 }
@@ -104,4 +104,31 @@ p {
 .btn:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 0.5rem #0f0707;
+}
+
+select {
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    font-weight: 600;
+    display: block;
+}
+
+
+form {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+select:focus {
+    border: 0.2rem solid #bddfab;
+}
+
+option:checked,
+option:hover {
+    background-color: #bddfab;
+}
+
+.inactive {
+    display: none;
 }
