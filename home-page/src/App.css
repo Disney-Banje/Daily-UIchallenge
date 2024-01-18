@@ -1,0 +1,18 @@
+.hero_cover {
+    background: url("https://images.unsplash.com/photo-1517079810336-d39e72287591?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero_section {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.logo_page {
+    margin-left: 4.5rem;
+    margin-top: 4.5rem;
+}
