@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f1f6f4;
+    --dark-color: #172b36;
+    --like-icon-color: #ff9932;
+    --card-back-color: #d9e8e3;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body {
+    color: var(--dark-color);
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    /* background-color: var(--background-color); */
+    background: url("https://pbs.twimg.com/media/GEdoJUFW4AAwe3H?format=jpg&name=large");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+main {
+    width: 29.5rem;
+    height: fit-content;
+    border-radius: 2.1rem;
+    overflow: hidden;
+}
+
+.card_cover {
+    height: 25.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("https://pbs.twimg.com/media/GEdoJUFW4AAwe3H?format=jpg&name=large");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 1.5rem;
+}
+
+.nft_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart_container  {
+    color: var(--card-back-color);
+    position: relative;
+}
+
+ion-icon {
+    font-size: 2.2rem;
+}
+
+.like_button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.6rem;
+    background-color: var(--card-back-color);
+}
+
+.like_button:active ion-icon[name="heart"] {
+    transform: translate(0.3rem, -0.3rem)
+}
+
+.like_button ion-icon {
+    color: var(--like-icon-color);
+    transition: transform 150ms ease-in-out;
+}
+
+.digit {
+    font-weight: 600;
+}
+
+img {
+    width: 1.8rem;
+    aspect-ratio: 1 / 1;
+}
+
+.tag {
+    color: var(--card-back-color);
+}
+
+.available_market {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.market_icons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem;
+    background-color: var(--card-back-color);
+    row-gap: 1.5rem;
+}
+
+.nft_name {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.collection_name,
+.auction_time {
+    color: gray;
+}
+
+strong {
+    color: var(--dark-color);
+}
+
+.auction_time,
+.nft_fee {
+    justify-self: end;
+}
+
+.nft_fee {
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
+.cta {
+    background-color: var(--card-back-color);
+    color: var(--dark-color);
+    font-weight: 600;
+    width: 100%;
+    padding: 1.5rem 0;
+    transition: all 250ms linear;
+}
+
+.cta:hover {
+    color: var(--card-back-color);
+    background-color: var(--dark-color);
+}
+
+.item_added {
+    width: 0.5rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--like-icon-color);
+    border-radius: 50%;
+    position: absolute;
+    right: -0.2rem;
+    top: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+footer a {
+    color: var(--background-color);
+}
