@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    padding: 2.2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+    border-radius: 1.2rem;
+    padding: 2.2rem;
+}
+
+.web_tagline {
+    width: 40.5rem;
+    align-self: center;
+}
+
+.tagline_title {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.tagline_detail {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.slider {
+    width: 82.9rem;
+    height: 35.8rem;
+    position: relative;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+
+.page_category {
+    position: absolute;
+    font-size: 1.2rem;
+    z-index: 100px;
+    top: 0.8rem;
+    left: 0.8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    background-color: antiquewhite;
+    color: black;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.8rem;
+}
+
+.slide_wrapper {
+    z-index: 10px;
+    position: absolute;
+    width: 100%;
+    max-width: 24.5rem;
+    height: 32.5rem;
+    border-radius: 1.4rem;
+    padding: 1.2rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    transition: all 650ms;
+}
+
+.content_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_bar {
+    width: 3.8rem;
+    height: 0.2rem;
+    background-color: yellow;
+    margin: 0 auto;
+}
+
+.card_state {
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.card_title {
+    margin-bottom: 1.2rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.card_summary {
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+.btn {
+    position: absolute;
+    z-index: 150px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ion-icon:hover,
+ion-icon:active {
+    opacity: 1;
+}
+
+ion-icon {
+    font-size: 3.8rem;
+    color: white;
+    opacity: 0.25;
+    transition: opacity 200ms ease-in;
+}
+
+.btn-prev {
+    top: 45%;
+    left: 0.5rem;
+}
+
+.btn-next {
+    top: 45%;
+    right: 0.5rem;
+}
+
+.kili {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.2) 18%, hsla(233, 32%, 15%, 0.78) 80%), url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mt._Kilimanjaro_12.2006.JPG/1280px-Mt._Kilimanjaro_12.2006.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.canyon {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.2) 18%, hsla(233, 32%, 15%, 0.78) 80%), url("https://images.unsplash.com/photo-1691961017425-1f10b99109c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.migration {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.2) 18%, hsla(233, 32%, 15%, 0.78) 80%), url("https://images.unsplash.com/photo-1560440976-a8a309ea5837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sahara {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.2) 18%, hsla(233, 32%, 15%, 0.78) 80%), url("https://images.unsplash.com/photo-1489573280374-2e193c63726c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.delta {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.2) 18%, hsla(233, 32%, 15%, 0.78) 80%), url("https://images.unsplash.com/photo-1531208853003-c1ec1b8a81d7?q=80&w=1866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.crater {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.2) 18%, hsla(233, 32%, 15%, 0.78) 80%), url("https://images.unsplash.com/photo-1646323277558-0c903f62e658?q=80&w=1919&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nile {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.2) 18%, hsla(233, 32%, 15%, 0.78) 80%), url("https://images.unsplash.com/photo-1665598765954-110bcbb104c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.temple {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.2) 18%, hsla(233, 32%, 15%, 0.78) 80%), url("https://images.unsplash.com/photo-1683891043389-31a5ca0692f8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
