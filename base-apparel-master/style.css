@@ -31,6 +31,7 @@ body {
     color: var(--desaturated-red);
     font-weight: 400;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 74%, 98%));
+    min-height: 100vh;
 }
 
 .header {
@@ -84,6 +85,7 @@ article {
     box-shadow: 0 0.6rem 0.8rem rgb(193, 191, 191);
     transition: all 250ms ease-in-out;
     cursor: pointer;
+    margin-left: 1.0rem;
 }
 
 .btn:hover {
@@ -127,7 +129,7 @@ label {
 
 .attribution a {
     color: var(--Dark-grayish-red);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 footer {
@@ -138,6 +140,11 @@ footer {
 
 /* Window responsivness break points */
 @media screen and (min-width: 912px) {
+
+    body {
+        background: url('images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+    }
     .page_content {
         display: grid;
         grid-template-columns: 1fr 1fr;
