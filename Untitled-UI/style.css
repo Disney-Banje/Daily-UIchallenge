@@ -1,0 +1,147 @@
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxm;
+}
+
+html {
+    font-size: 62.5%;
+    /* background-color: #f2f3f4; */
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #001122;
+}
+
+input {
+    padding: 0.78rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid #e5ebea;
+    background-color: transparent;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label span {
+    align-self: flex-start;
+    color: #001122;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input:focus {
+    border: 0.2rem solid #e5ebea;
+    background-color: transparent;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #001122;
+    min-height: 100vh;
+}
+
+header {
+    padding: 2.2rem;
+}
+
+.form-register {
+    text-align: center;
+    padding: 2.5rem 2.2rem;
+}
+
+.page-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.tagline {
+    color: gray;
+    font-weight: 400;
+    margin-bottom: 2.0rem;
+}
+
+.signup-accounts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2.0rem;
+}
+
+.signup-accounts a {
+    border: 0.2rem solid #e5ebea;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.signup-accounts a span {
+    font-weight: 600;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.divider span {
+    color: gray;
+}
+
+hr {
+    flex: 1;
+}
+
+label[for='email'] {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    width: 100%;
+    margin-top: 2.0rem;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    background-color: #001122;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.login-option {
+    color: gray;
+    margin-top: 2.5rem;
+}
+
+.login-option a {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+blockquote .testimony::before {
+    content: '\201C';
+}
+
+blockquote .testimony::after  {
+    content: '\201D';
+}
+
+.active {
+    display: none;
+}
+
