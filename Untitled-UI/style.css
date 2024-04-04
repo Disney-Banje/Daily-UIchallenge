@@ -69,11 +69,15 @@ header {
     align-items: center;
 }
 
+ion-icon[name='menu-outline'] {
+    font-size: 3.2rem;
+}
+
 .form-register {
     text-align: center;
     padding: 2.5rem 2.2rem;
     max-width: 35.12rem;
-    margin: 4.5rem auto;
+    margin: auto;
 }
 
 .twitter-account ion-icon {
@@ -88,6 +92,7 @@ header {
 .tagline {
     color: gray;
     font-weight: 400;
+    font-size: 1.5rem;
     margin-bottom: 2.0rem;
 }
 
@@ -106,6 +111,13 @@ header {
     justify-content: center;
     align-items: center;
     gap: 0.6rem;
+    transition: all 350ms ease-in-out;
+}
+
+.signup-accounts a:hover {
+    color: #F1D236;
+    background-color: #001122;
+    border-color: #e5ebea;
 }
 
 .signup-accounts a span {
@@ -139,6 +151,12 @@ button[type='submit'] {
     background-color: #001122;
     color: white;
     font-size: 1.7rem;
+    transition: all 350ms ease-in-out;
+}
+
+button[type='submit']:hover {
+    color: #F1D236;
+    transform: translate(0.2rem, -0.1rem);
 }
 
 .login-option {
@@ -149,6 +167,11 @@ button[type='submit'] {
 .login-option a {
     font-weight: 600;
     text-decoration: underline;
+    transition: color 250ms ease-out;
+}
+
+.login-option a:hover {
+    color: #F1D236;
 }
 
 blockquote .testimony::before {
@@ -207,8 +230,8 @@ blockquote .testimony::after  {
         background-repeat: no-repeat;
         padding: 2.0rem;
         display: flex;
-        flex-direction: column;
-        justify-content: end;
+        justify-content: center;
+        align-items: end;
         position: relative;
     }
 
@@ -257,17 +280,19 @@ blockquote .testimony::after  {
         height: 3.7rem;
     }
 
-    blockquote {
+    .page-cover article {
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.16);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(6.2px);
         -webkit-backdrop-filter: blur(6.2px);
         border: 1px solid rgba(255, 255, 255, 0.56);
-        padding: 2.0rem;
         width: 67rem;
-        margin: auto;
+        min-height: 20.4rem;
         color: #f5f5f5;
+        display: grid;
+        grid-template-columns: repeat(5, 100%);
+        overflow: hidden;
     }
     
     .testimony {
@@ -279,7 +304,7 @@ blockquote .testimony::after  {
     footer {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .client-name {
@@ -305,5 +330,15 @@ blockquote .testimony::after  {
         padding: 0.8rem;
         border-radius: 50%;
         border: 0.1rem solid #f5f5f5;
+    }
+    blockquote {
+        transition: transform 0.6s ease-in-out;
+        margin: 2.0rem;
+    }
+
+    .pevnext-button {
+        position: absolute;
+        bottom: 2.0rem;
+        right: 2.0rem;
     }
 }
