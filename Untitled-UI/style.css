@@ -331,6 +331,7 @@ blockquote .testimony::after  {
         border-radius: 50%;
         border: 0.1rem solid #f5f5f5;
     }
+    
     blockquote {
         transition: transform 0.6s ease-in-out;
         margin: 2.0rem;

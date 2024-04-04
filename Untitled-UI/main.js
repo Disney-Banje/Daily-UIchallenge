@@ -15,6 +15,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
   })
   .then(clients => {
     populateCarousel(clients);
+    // console.log(clients.length)
+
+    const carouselItems = document.querySelectorAll('blockquote');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      carouselItems.forEach(item => {
+        item.style.display = 'none'; // hide all slides..
+      });
+
+      // show slide at the current index...
+      carouselItems[index].style.display = 'block';
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      showSlide(currentIndex);
+    }
+
+    function previousSlide() {
+      currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+      showSlide(currentIndex);
+    }
+
+    showSlide(currentIndex)
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', previousSlide);
   })
   .catch(error => console.error(`Fetch problem: ${error.message}`));
 
@@ -66,7 +94,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   function populateCarousel(items) {
 
-    items.forEach(item => {
+    items.forEach((item, index) => {
       const card = createClientItem(item);
       article.appendChild(card);
     })
