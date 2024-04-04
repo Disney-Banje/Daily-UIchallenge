@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled UI form</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="page-logo">
+                <a href="index.html" class="logo-item">
+                    <img src="https://assets-global.website-files.com/636496d3f0ebfdaba9784655/636496d3f0ebfd7052784680_logotype.svg" alt="lo">
+                </a>
+            </div>
+            <!-- add icon menu -->
+            <div class="menu-nav">
+                <ion-icon name="menu-outline"></ion-icon>
+                <span class="active">
+                    <ion-icon name="arrow-back"></ion-icon> go back
+                </span>
+            </div>
+        </header>
+
+        <main>
+            <section class="form-register">
+                <article>
+                    <h1 class="page-title">Create account</h1>
+                    <p class="tagline">Start your 30-day free trial. Cancel anytime.</p>
+
+                    <div class="signup-accounts">
+                        <a href="" class="google-account">
+                            <!-- logo -->
+                            <ion-icon name="logo-google"></ion-icon>
+                            <span>Sign up with Google</span>
+                        </a>
+                        <a href="" class="apple-account">
+                            <!-- logo -->
+                            <ion-icon name="logo-apple"></ion-icon>
+                            <span>Sign up with Apple ID</span>
+                        </a>
+                        <a href="" class="twitter-account">
+                            <!-- logo -->
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <span>Sign up with Twitter</span>
+                        </a>
+                    </div>
+
+                    <div class="divider">
+                        <hr>
+                        <span>or</span>
+                        <hr>
+                    </div>
+
+                    <form>
+                        <label for="email">
+                            <span>Email*</span>
+                            <input type="email" name="user-email" id="email" placeholder="Enter your email">
+                        </label>
+                        <label for="password">
+                            <span>Password*</span>
+                            <input type="password" name="user-password" id="password" placeholder="Create a password"> 
+                        </label>
+                        <button type="submit">Create account</button>
+                    </form>
+                    <p class="login-option">
+                        Already have an account? <a href="#">Log in</a>
+                    </p>
+                </article>
+            </section>
+            <section class="page-cover active">
+                <div class="box square-large one"></div>
+                <div class="box square-large two"></div>
+                <div class="box square-large three"></div>
+                <div class="box square-small"></div>
+                <div class="box square-xsmall"></div>
+                <article class="carousel-container">
+                    <div class="pevnext-button">
+                        <button class="prev-btn">
+                            <ion-icon name="chevron-back"></ion-icon>
+                        </button>
+                        <button class="next-btn">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                        </button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+<!-- https://assets-global.website-files.com/636496d3f0ebfdaba9784655/636496d3f0ebfd7052784680_logotype.svg -->

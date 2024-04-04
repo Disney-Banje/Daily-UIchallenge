@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #001122;
+}
+
+img {
+    max-width: 100%;
+}
+
+input {
+    padding: 0.78rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid #e5ebea;
+    background-color: transparent;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label span {
+    align-self: flex-start;
+    color: #001122;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input:focus {
+    border: 0.2rem solid #e5ebea;
+    background-color: transparent;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #001122;
+    min-height: 100vh;
+}
+
+header {
+    padding: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-icon[name='menu-outline'] {
+    font-size: 3.2rem;
+}
+
+.form-register {
+    text-align: center;
+    padding: 2.5rem 2.2rem;
+    max-width: 35.12rem;
+    margin: auto;
+}
+
+.twitter-account ion-icon {
+    color: cornflowerblue;
+}
+
+.page-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.tagline {
+    color: gray;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 2.0rem;
+}
+
+.signup-accounts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2.0rem;
+}
+
+.signup-accounts a {
+    border: 0.2rem solid #e5ebea;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 350ms ease-in-out;
+}
+
+.signup-accounts a:hover {
+    color: #F1D236;
+    background-color: #001122;
+    border-color: #e5ebea;
+}
+
+.signup-accounts a span {
+    font-weight: 600;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.divider span {
+    color: gray;
+}
+
+hr {
+    flex: 1;
+}
+
+label[for='email'] {
+    margin-bottom: 1.5rem;
+}
+
+button[type='submit'] {
+    width: 100%;
+    margin-top: 2.0rem;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    background-color: #001122;
+    color: white;
+    font-size: 1.7rem;
+    transition: all 350ms ease-in-out;
+}
+
+button[type='submit']:hover {
+    color: #F1D236;
+    transform: translate(0.2rem, -0.1rem);
+}
+
+.login-option {
+    color: gray;
+    margin-top: 2.5rem;
+}
+
+.login-option a {
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 250ms ease-out;
+}
+
+.login-option a:hover {
+    color: #F1D236;
+}
+
+blockquote .testimony::before {
+    content: '\201C';
+}
+
+blockquote .testimony::after  {
+    content: '\201D';
+}
+
+.active {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .active {
+        display: block;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    header {
+        position: absolute;
+        width: 32.5%;
+        display: flex;
+        align-items: center;
+    }
+
+    ion-icon[name='menu-outline']  {
+        display: none;
+    }
+
+    .menu-nav span {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 100%;
+    }
+
+    .form-register {
+        margin-top: 7.5rem;
+    }
+    
+    .page-cover {
+        background: url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 2.0rem;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+    }
+
+    .box {
+        position: absolute;
+         /* From https://css.glass */
+         background: rgba(255, 255, 255, 0.16);
+         backdrop-filter: blur(2.2px);
+         -webkit-backdrop-filter: blur(2.2px);
+         border: 1px solid rgba(255, 255, 255, 0.56);
+    }
+
+    .square-large {
+        width: 9.5rem;
+        height: 9.8rem;
+    }
+
+    .square-small {
+        width: 6.5rem;
+        height: 6.8rem;
+        top: 15.8rem;
+        right: 2.9rem;
+        backdrop-filter: blur(6.2px);
+        -webkit-backdrop-filter: blur(6.2px);
+    }
+
+    .one {
+        top: 10.5rem;
+        right: 4.8rem;
+    }
+
+    .two {
+        top: 15.5rem;
+        left: 4.8rem;
+    }
+
+    .three {
+        top: 28.9rem;
+        right: 20.5rem;
+    }
+
+    .square-xsmall {
+        top: 36.0rem;
+        right: 27.5rem;
+        width: 3.5rem;
+        height: 3.7rem;
+    }
+
+    .page-cover article {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.16);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.2px);
+        -webkit-backdrop-filter: blur(6.2px);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        width: 67rem;
+        min-height: 20.4rem;
+        color: #f5f5f5;
+        display: grid;
+        grid-template-columns: repeat(5, 100%);
+        overflow: hidden;
+    }
+    
+    .testimony {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .client-name {
+        font-size: 2.2rem;
+    }
+
+    .client-role {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .company-type {
+        font-size: 1.2rem;
+    }
+
+    .prev-btn {
+        margin-right: 0.8rem;
+    }
+
+    button ion-icon {
+        font-size: 2.5rem;
+        color: #f5f5f5;
+        padding: 0.8rem;
+        border-radius: 50%;
+        border: 0.1rem solid #f5f5f5;
+    }
+    
+    blockquote {
+        transition: transform 0.6s ease-in-out;
+        margin: 2.0rem;
+    }
+
+    .pevnext-button {
+        position: absolute;
+        bottom: 2.0rem;
+        right: 2.0rem;
+    }
+}
