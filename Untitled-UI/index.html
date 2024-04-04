@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Untitled UI form</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
     <div class="container">
         <header>
             <div class="page-logo">
-                <a href="index.html" class="logo-item"></a>
+                <a href="index.html" class="logo-item">
+                    <img src="https://assets-global.website-files.com/636496d3f0ebfdaba9784655/636496d3f0ebfd7052784680_logotype.svg" alt="lo">
+                </a>
             </div>
             <!-- add icon menu -->
+            <div class="menu-nav">
+                <ion-icon name="menu-outline"></ion-icon>
+                <span class="active">
+                    <ion-icon name="arrow-back"></ion-icon> go back
+                </span>
+            </div>
         </header>
 
         <main>
@@ -24,14 +35,17 @@
                     <div class="signup-accounts">
                         <a href="" class="google-account">
                             <!-- logo -->
+                            <ion-icon name="logo-google"></ion-icon>
                             <span>Sign up with Google</span>
                         </a>
                         <a href="" class="apple-account">
                             <!-- logo -->
+                            <ion-icon name="logo-apple"></ion-icon>
                             <span>Sign up with Apple ID</span>
                         </a>
                         <a href="" class="twitter-account">
                             <!-- logo -->
+                            <ion-icon name="logo-twitter"></ion-icon>
                             <span>Sign up with Twitter</span>
                         </a>
                     </div>
@@ -59,6 +73,11 @@
                 </article>
             </section>
             <section class="page-cover active">
+                <div class="box square-large one"></div>
+                <div class="box square-large two"></div>
+                <div class="box square-large three"></div>
+                <div class="box square-small"></div>
+                <div class="box square-xsmall"></div>
                 <article>
                     <blockquote>
                         <p class="testimony">With Untitled, your support process can be as enjoyable as your product. When it's this easy, customers keep comming back.</p>
@@ -71,10 +90,20 @@
                                 </div>
                             </div>
                             <div class="rating">
-                                <div class="rate-level"></div>
+                                <div class="rate-level">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
                                 <div class="pevnext-button">
-                                    <button class="prev-btn"></button>
-                                    <button class="next-btn"></button>
+                                    <button class="prev-btn">
+                                        <ion-icon name="chevron-back"></ion-icon>
+                                    </button>
+                                    <button class="next-btn">
+                                        <ion-icon name="chevron-forward"></ion-icon>
+                                    </button>
                                 </div>
                             </div>
                         </footer>

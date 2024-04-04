@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 *::before,
 *::after,
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-boxm;
+    box-sizing: border-box;
 }
 
 html {
@@ -14,6 +16,10 @@ a {
     outline: none;
     text-decoration: none;
     color: #001122;
+}
+
+img {
+    max-width: 100%;
 }
 
 input {
@@ -44,9 +50,12 @@ button {
     border: none;
     outline: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 body {
+    font-family: "DM Sans", sans-serif;
+
     font-size: 1.6rem;
     line-height: 1.5;
     color: #001122;
@@ -55,13 +64,20 @@ body {
 
 header {
     padding: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .form-register {
     text-align: center;
     padding: 2.5rem 2.2rem;
-    max-width: 33.12rem;
-    margin: auto;
+    max-width: 35.12rem;
+    margin: 4.5rem auto;
+}
+
+.twitter-account ion-icon {
+    color: cornflowerblue;
 }
 
 .page-title {
@@ -88,6 +104,7 @@ header {
     border-radius: 0.6rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.6rem;
 }
 
@@ -114,7 +131,7 @@ label[for='email'] {
     margin-bottom: 1.5rem;
 }
 
-button {
+button[type='submit'] {
     width: 100%;
     margin-top: 2.0rem;
     padding: 0.8rem;
@@ -146,3 +163,147 @@ blockquote .testimony::after  {
     display: none;
 }
 
+
+@media screen and (min-width: 1024px) {
+    .active {
+        display: block;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    header {
+        position: absolute;
+        width: 32.5%;
+        display: flex;
+        align-items: center;
+    }
+
+    ion-icon[name='menu-outline']  {
+        display: none;
+    }
+
+    .menu-nav span {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 100%;
+    }
+
+    .form-register {
+        margin-top: 7.5rem;
+    }
+    
+    .page-cover {
+        background: url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 2.0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        position: relative;
+    }
+
+    .box {
+        position: absolute;
+         /* From https://css.glass */
+         background: rgba(255, 255, 255, 0.16);
+         backdrop-filter: blur(2.2px);
+         -webkit-backdrop-filter: blur(2.2px);
+         border: 1px solid rgba(255, 255, 255, 0.56);
+    }
+
+    .square-large {
+        width: 9.5rem;
+        height: 9.8rem;
+    }
+
+    .square-small {
+        width: 6.5rem;
+        height: 6.8rem;
+        top: 15.8rem;
+        right: 2.9rem;
+        backdrop-filter: blur(6.2px);
+        -webkit-backdrop-filter: blur(6.2px);
+    }
+
+    .one {
+        top: 10.5rem;
+        right: 4.8rem;
+    }
+
+    .two {
+        top: 15.5rem;
+        left: 4.8rem;
+    }
+
+    .three {
+        top: 28.9rem;
+        right: 20.5rem;
+    }
+
+    .square-xsmall {
+        top: 36.0rem;
+        right: 27.5rem;
+        width: 3.5rem;
+        height: 3.7rem;
+    }
+
+    blockquote {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.16);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.2px);
+        -webkit-backdrop-filter: blur(6.2px);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        padding: 2.0rem;
+        width: 67rem;
+        margin: auto;
+        color: #f5f5f5;
+    }
+    
+    .testimony {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .client-name {
+        font-size: 2.2rem;
+    }
+
+    .client-role {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .company-type {
+        font-size: 1.2rem;
+    }
+
+    .prev-btn {
+        margin-right: 0.8rem;
+    }
+
+    button ion-icon {
+        font-size: 2.5rem;
+        color: #f5f5f5;
+        padding: 0.8rem;
+        border-radius: 50%;
+        border: 0.1rem solid #f5f5f5;
+    }
+}
