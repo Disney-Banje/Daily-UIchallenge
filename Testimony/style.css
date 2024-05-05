@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --background: #f2f1dc;
+  --color: #111f27;
+  --secondary-color: #cc3333; 
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+img {
+  width: 5.2rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  background-color: var(--background);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  color: var(--color);
+}
+
+article {
+  max-width: 49.0rem;
+  min-height: 25.14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 0.1rem solid; */
+}
+
+.clients-avatar {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.9rem 0;
+}
+
+.active {
+  opacity: 1;
+}
+
+.client-testimony {
+  font-size: 1.79rem;
+}
+
+.client-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.client-role {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
