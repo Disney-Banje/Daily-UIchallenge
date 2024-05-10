@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --lynx-White: #f7f7f7;
+  --color: #172713;
+  --card-color: #aed0c9;
+  --chinese-lantern: #f09056;
+  --Sensaimidori-green: #374231;
+  --Dream-catcher: #e5ebea;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+button {
+  background: transparent;
+  border: none;
+  background-color: var(--Dream-catcher);
+  border-radius: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--background);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  color: var(--color);
+}
+
+.hotel-card {
+  width: 32.5rem;
+  margin-bottom: 2.0rem;
+  box-shadow: 0.3rem 0.3rem 1.8rem var(--),
+              0.5rem 0.5rem 2.0rem var(--Dream-catcher),
+              0.7rem 0.7rem 2.2rem var(--Dream-catcher);
+}
+
+.hotel-card img {
+  margin-bottom: 0.5rem;
+}
+
+article {
+  background: var(--chinese-lantern);
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+.card-cover {
+  border-radius: 0.8rem;
+  height: 16.3rem;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2.0rem;
+  font-weight: 700;
+}
+
+.card-data {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating {
+  font-weight: 700;
+}
+
+.reviews,
+.status {
+  color: var(--Sensaimidori-green);
+}
+
+.active {
+  background: var(--color);
+  color: var(--chinese-lantern);
+}
+
+.categories-collection {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.currency {
+  font-size: 2.0rem;
+  font-weight: 700;
+  color: var(--color);
+}
+
+.price-tag {
+  color: var(--Sensaimidori-green);
+  font-size: 1.4rem;
+  position: relative;
+}
+
+ion-icon {
+  position: absolute;
+  color: var(--lynx-White);
+  font-size: 1.68rem;
+}
+
+.hidden {
+    display: none;
+}
+
+
