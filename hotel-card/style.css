@@ -51,16 +51,14 @@ body {
   box-shadow: 0.3rem 0.3rem 1.8rem var(--),
               0.5rem 0.5rem 2.0rem var(--Dream-catcher),
               0.7rem 0.7rem 2.2rem var(--Dream-catcher);
+  background: var(--chinese-lantern);
+  padding: 1.2rem;
+  cursor: pointer;
+  position: relative;
 }
 
 .hotel-card img {
   margin-bottom: 0.5rem;
-}
-
-article {
-  background: var(--chinese-lantern);
-  padding: 1.2rem;
-  cursor: pointer;
 }
 
 .card-cover {
@@ -114,8 +112,9 @@ h2 {
 
 ion-icon {
   position: absolute;
-  color: var(--lynx-White);
+  color: var(--Sensaimidori-green);
   font-size: 1.68rem;
+
 }
 
 .hidden {
