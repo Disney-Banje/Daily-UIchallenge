@@ -29,7 +29,7 @@ let activeTestimony;
 
 // Create individual instances for the element that will be visible when the window opens.
 document.addEventListener('DOMContentLoaded', () => {
-  activeTestimony = testimonials.find(({ author }) => author === 'John Miller');
+  activeTestimony = testimonials.find(({ author }) => author === 'Alice Lee');
     displayAuthor(activeTestimony);
 
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // console.log(avatar.alt)
 
           const authorName = avatar.alt;
-          activeTestimony = testimonials.find(({author }) => author === authorName);
+          activeTestimony = testimonials.find(({ author }) => author === authorName);
           displayAuthor(activeTestimony);
         })
     })
