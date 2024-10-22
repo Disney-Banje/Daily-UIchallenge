@@ -2,6 +2,11 @@ html {
     font-size: 62.5%;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
 *::before,
 *::after,
 * {
@@ -16,7 +21,163 @@ button {
     background-color: transparent;
 }
 
+li {
+    margin-left: 2.2rem;
+}
+
+:root {
+    --Pumpkin-Cat: #EB7b07;
+    --krestel-White: #e0d6c8;
+    --Crystal-Cut: #f8f4f4ed;
+    --Ecological: #677f70;
+    --Halloween-Sateen: #060609;
+    --Coarse-Wool: #181b26;
+    --Thyme: #50574c;
+}
+
 body {
+    font-family: 'Inter';
     font-size: 1.6rem;
     line-height: 1.5;
+    background-color: var(--Crystal-Cut);
+    color: var(--Halloween-Sateen);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+#app {
+    margin: 2.2rem;
+}
+
+.page-title {
+    font-size: 3.8rem;
+    font-weight: 400;
+    margin-bottom: 1.0rem;
+}
+
+.subtitle-tag {
+    color: var(--Thyme);
+    font-weight: 400;
+    margin-bottom: 2.8rem;
+}
+
+.button-container {
+    border-bottom: 0.1rem solid var(--Coarse-Wool);
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+button {
+    font-weight: 500;
+    padding: 0.8rem 0.9rem 0.8rem 0;
+}
+
+.active {
+    border-bottom: 0.2rem solid var(--Halloween-Sateen);
+    font-weight: 600;
+}
+
+.price-articles {
+    margin: 3.0rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    grid-template-columns: 1fr;
+    color: var(--Thyme);
+    font-size: 1.4rem;
+}
+
+.plan-description {
+    margin-bottom: 2.2rem;
+}
+
+strong {
+    color: var(--Halloween-Sateen);
+}
+
+.discount-rate {
+    font-size: 1.0rem;
+    color: var(--Crystal-Cut);
+    padding: 0.3rem;
+    background-color: var(--Ecological);
+    border-radius: 0.5rem;
+}
+
+.period-rate {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    color: var(--Halloween-Sateen);
+    font-weight: 600;
+    margin-right: 0.4rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+}
+
+.card-cta {
+    background-color: var(--Pumpkin-Cat);
+    color: var(--Crystal-Cut);
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    margin-top: 1.8rem;
+}
+
+.pricing-footer {
+    font-size: 1.4rem;
+    color: var(--Thyme);
+    background-color: var(--krestel-White);
+    padding: 2.2rem;
+    border-radius: 0.8rem;
+}
+
+.pricing-footer span,
+.pricing-footer h2 {
+    color: var(--Halloween-Sateen);
+}
+
+.pricing-footer span {
+    font-weight: 500;
+}
+
+.pricing-footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-cta {
+    align-self: flex-end;
+    background-color: var(--Crystal-Cut);
+    color: var(--Halloween-Sateen);
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 1.3rem 0;
+}
+
+@media screen and (min-width: 600px) {
+
+    #app {
+        width: 57.5rem;
+    }
+    
+    .price-articles {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+    }
 }
