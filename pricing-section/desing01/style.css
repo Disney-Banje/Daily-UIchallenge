@@ -4,12 +4,12 @@ html {
 
 @font-face {
     font-family: 'Raleway';
-    src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    src: url('../font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    src: url('../font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
 *::before,
@@ -23,6 +23,8 @@ html {
 button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 a {
@@ -63,6 +65,7 @@ body {
 
 #app {
     margin: 2.0rem;
+    max-width: 103.0rem;
 }
 
 .page-heading {
@@ -97,7 +100,7 @@ body {
 
 .active {
     background-color: var(--Midnight-Edition);
-    color: var(--Anti-Flash-White);
+    color: var(--Ardent-Coral);
     border-radius: 4.5rem;
 }
 
@@ -191,4 +194,43 @@ ion-icon {
     border-radius: 0.5rem;
     margin-top: 1.8rem;
     font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .price-articles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        border: 0.08rem solid var(--Porpoise-Fin);
+        border-radius: 0.5em;
+    }
+
+    .basic-service,
+    .pro-service,
+    .enterprise-service {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .service-price {
+        border-bottom: 0.08rem solid var(--Porpoise-Fin);
+    }
+
+    .pro-service {
+        border-right: 0.08rem solid var(--Porpoise-Fin);
+        border-left: 0.08rem solid var(--Porpoise-Fin);
+    }
+
+    .service-price,
+    .packageService-list {
+        padding: 3.8rem;
+    }
+
+    .price-articles__footer {
+        margin-top: 0;
+    }
+
+    .price-articles__footer p {
+        width: 45%;
+    }
 }
