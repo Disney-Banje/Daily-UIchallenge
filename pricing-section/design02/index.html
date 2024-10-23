@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design 02</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     
@@ -17,8 +20,8 @@
                 Try formfly for free. Upgrade to unlock more.
             </p>
             <div class="button-container">
-                <button class="annual-plan active">Pay Annualy</button>
-                <button class="monthly-plan">Pay Monthly</button>
+                <button class="selection annual-plan active">Pay Annualy</button>
+                <button class="selection monthly-plan">Pay Monthly</button>
             </div>
             <section class="price-articles">
                 <article class="price-card">
@@ -26,7 +29,9 @@
                         <strong>Basic</strong> with 14days free trial <span class="discount-rate">-10%</span>
                     </p>
                     <p class="period-rate">
-                        <span class="price">$19</span>/month
+                        <span class="price">
+                            $<span class="basic-price">19</span>
+                        </span>/month
                     </p>
                     <ul>
                         <li>
@@ -42,14 +47,16 @@
                             <p>Unlimited Questions</p>
                         </li>
                     </ul>
-                    <button class="card-cta">Create your 1st Form</button>
+                    <button class="card-cta">Create your 1st Form &rarr;</button>
                 </article>
                 <article class="price-card">
                     <p class="plan-description">
                         <strong>Pro</strong> with 14days free trial <span class="discount-rate">-15%</span>
                     </p>
                     <p class="period-rate">
-                        <span class="price">$49</span>/month
+                        <span class="price">
+                            $<span class="pro-price">49</span>
+                        </span>/month
                     </p>
                     <ul>
                         <li>
@@ -65,7 +72,7 @@
                             <p>Unlimited Questions</p>
                         </li>
                     </ul>
-                    <button class="card-cta">Create your 1st Form</button>
+                    <button class="card-cta">Create your 1st Form &rarr;</button>
                 </article>
             </section>
             <section class="pricing-footer">
@@ -86,7 +93,7 @@
                             <p>Unlimited Questions</p>
                         </li>
                     </ul>
-                    <button class="footer-cta">Contact Sales</button>
+                    <button class="footer-cta"><ion-icon name="call-outline"></ion-icon> Contact Sales</button>
                 </div>
             </section>
         </main>

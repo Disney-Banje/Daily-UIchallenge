@@ -151,16 +151,20 @@ ul {
 
 .pricing-footer div {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
 .footer-cta {
-    align-self: flex-end;
     background-color: var(--Crystal-Cut);
     color: var(--Halloween-Sateen);
     padding: 0.6rem 1.2rem;
     border-radius: 0.5rem;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 h2 {
@@ -179,5 +183,11 @@ h2 {
         flex-direction: row;
         gap: 0;
         justify-content: space-between;
+    }
+
+    .pricing-footer div {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
     }
 }
