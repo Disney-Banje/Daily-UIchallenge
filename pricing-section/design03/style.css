@@ -25,6 +25,11 @@ li {
     list-style-type: none;
 }
 
+:root {
+    --shadow: 0.2rem 0.4rem 1.0rem #404048
+              0.4rem 0.8rem 2.0rem #404048;
+}
+
 body {
     font-family: 'Outfit';
     font-size: 1.6rem;
@@ -112,6 +117,7 @@ ion-icon {
     background-color: #000011;
     color: #f2f1ed;
     transform: rotate(-2.5deg);
+    box-shadow: 0.2rem 0.4rem 1.0rem #404048;
 }
 
 @media screen and (min-width: 600px) {
