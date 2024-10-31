@@ -2,6 +2,11 @@ html {
     font-size: 62.5%;
 }
 
+@font-face {
+    font-family: 'Outfit';
+    src: url('../font/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
 *::before,
 *::after,
 * {
@@ -16,7 +21,104 @@ button {
     background-color: transparent;
 }
 
+li {
+    list-style-type: none;
+}
+
 body {
+    font-family: 'Outfit';
     font-size: 1.6rem;
     line-height: 1.5;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #f2f1ed;
+    color: gray;
+}
+
+#app {
+    margin: 2.2rem;
+    max-width: 70.0rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+h1 {
+    max-width: 52.0rem;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    font-size: 3.9rem;
+    margin: 0 auto 4.8rem;
+}
+
+em {
+    font-style: normal;
+    color: #000011;
+}
+
+.product-rate {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 2.8rem;
+}
+
+.price {
+    font-size: 5.8rem;
+    color: #000011;
+}
+
+.rate-duration {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #404048;
+    line-height: 1.2em;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.0rem;
+}
+
+ul p {
+    display: inline;
+}
+
+ion-icon {
+    color: #ff9933;
+    font-size: 1.5rem;
+}
+
+.page-cta {
+    background-color: #ff9933;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2.5rem;
+    font-size: 1.8rem;
+    margin: 2.8rem auto;
+    display: block;
+    font-weight: 500;
+    transition: all 250ms ease-in-out;
+}
+
+.page-cta:hover {
+    background-color: #000011;
+    color: #f2f1ed;
+    transform: rotate(-2.5deg);
+}
+
+@media screen and (min-width: 600px) {
+
+    ul {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.9rem;
+    }
+
 }

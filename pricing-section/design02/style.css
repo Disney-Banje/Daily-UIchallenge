@@ -7,6 +7,11 @@ html {
     src: url('../font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../font/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+}
+
 *::before,
 *::after,
 * {
@@ -36,7 +41,7 @@ li {
 }
 
 body {
-    font-family: 'Inter';
+    font-family: 'Space Mono';
     font-size: 1.6rem;
     line-height: 1.5;
     background-color: var(--Crystal-Cut);
@@ -51,6 +56,7 @@ body {
 }
 
 .page-title {
+    font-family: 'Inter';
     font-size: 3.8rem;
     font-weight: 400;
     margin-bottom: 1.0rem;
@@ -70,6 +76,7 @@ body {
 }
 
 button {
+    font-family: 'Inter';
     font-weight: 500;
     padding: 0.8rem 0.9rem 0.8rem 0;
 }
@@ -112,9 +119,10 @@ strong {
 
 .price {
     font-size: 2.5rem;
+    font-family: 'Inter';
     color: var(--Halloween-Sateen);
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-weight: 700;
+    margin-right: 0rem;
 }
 
 ul {
@@ -147,6 +155,7 @@ ul {
 
 .pricing-footer span {
     font-weight: 500;
+    font-family: 'Inter';
 }
 
 .pricing-footer div {
@@ -168,6 +177,7 @@ ul {
 }
 
 h2 {
+    font-family: 'Inter';
     font-weight: 500;
     font-size: 2.5rem;
     margin: 1.3rem 0;
