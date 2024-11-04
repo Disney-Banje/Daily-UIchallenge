@@ -1,0 +1,74 @@
+[
+    {
+        "description": {
+            "location": "Entire rental unit in Carlton",
+            "direction": "Just a 5-Minute Walk from the University of Melbourne"
+        },
+        "rating": 4,
+        "reviews": 82,
+        "host": {
+            "hostName": "Caitlyn",
+            "hostAvatar": ""
+        },
+        "stayPicture": "",
+        "stayPinLocation": "Carlton VIC",
+        "wifi": true,
+        "bedNumbers": 1,
+        "price": 490,
+        "guestFavorite": true
+    },
+    {
+        "description": {
+            "location": "Entire apartment rental in Collingwood",
+            "direction": "Apartment with a 5-minute Stroll to Queen Vic Market"
+        },
+        "rating": 4,
+        "reviews": 202,
+        "host": {
+            "hostName": "Fleur",
+            "hostAvatar": ""
+        },
+        "stayPicture": "",
+        "stayPinLocation": "Collingwood VIC",
+        "wifi": true,
+        "bedNumbers": 1,
+        "price": 540,
+        "guestFavorite": true
+    },
+    {
+        "description": {
+            "location": "Entire loft in central business district",
+            "direction": "Modern Loft Inspired by New York City Design"
+        },
+        "rating": 4,
+        "reviews": 44,
+        "host": {
+            "hostName": "Marco",
+            "hostAvatar": ""
+        },
+        "stayPicture": "",
+        "stayPinLocation": "Melbourne VIC",
+        "wifi": true,
+        "bedNumbers": 1,
+        "price": 620,
+        "guestFavorite": false
+    },
+    {
+        "description": {
+            "location": "Entire apartment rental in Collingwood",
+            "direction": "Stunning Apartment Conveniently Located Nex to Transport"
+        },
+        "rating": 4,
+        "reviews": 12,
+        "host": {
+            "hostName": "Mikey",
+            "hostAvatar": ""
+        },
+        "stayPicture": "",
+        "stayPinLocation": "Melbourne VIC",
+        "wifi": true,
+        "bedNumbers": 1,
+        "price": 600,
+        "guestFavorite": false
+    }
+]
